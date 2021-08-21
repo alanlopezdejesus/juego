@@ -1,0 +1,1 @@
+var contexto = document.getElementById()
