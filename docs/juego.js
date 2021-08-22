@@ -1,6 +1,11 @@
-var contexto = document.getElementById("LienzoJuego").getContext("2d")
-contexto.canvas.width = 300
-contexto.canvas.height = 530
+var contexto = document.getElementById("LienzoJuego")
+var ctx =contexto.getContext("2d")
+var WIDTH = 300;
+var HEIGHT = 530;
+var CANVAS_WIDTH = 300;
+var CANVAS_HEIGHT = 530;
+contexto.width = WIDTH;
+contexto.height = HEIGHT;
 
 //Variables generales
 var score = 0
@@ -43,6 +48,18 @@ function presionar(){
   personaje.y -=35
 }
 
+resize()
+function resize(){
+  CANVAS_WIDTH = window.innerHeight;
+  CANVAS_HEIGHT = window.innerWidth;
+  
+  contexto.width = WIDTH;
+  contexto.height = HEIGHT;
+  
+  contexto.style..height = ""+CANVAS_WIDTH+"px";
+}
+
+//Bucle
 setInterval(loop,1000/FPS)
 
 function loop() {
@@ -92,4 +109,5 @@ function loop() {
 
 
 // Evento
+window.addEventListener("resize",resize)
 window.addEventListener("keydown",presionar)
