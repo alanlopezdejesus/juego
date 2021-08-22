@@ -21,7 +21,7 @@ tuberias[0] = {
 
 //Variables audios
 var punto = new Audio()
-punyo.src= "audios/punto.mp3"
+punto.src= "audios/punto.mp3"
 
 //Variables imagenes
 var pajaro = new Image()
