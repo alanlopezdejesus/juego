@@ -11,7 +11,7 @@ var personaje = {
   h:50
 }
 
-SetInterval(loop,1000/FPS)
+setInterval(loop,1000/FPS)
 
 function loop() {
   contexto.fillStyle="rgba(100,0,0,1)"
