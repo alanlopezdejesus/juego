@@ -56,7 +56,7 @@ function resize(){
   contexto.width = WIDTH;
   contexto.height = HEIGHT;
   
-  contexto.style..height = ""+CANVAS_WIDTH+"px";
+  contexto.style.height = ""+CANVAS_WIDTH+"px";
 }
 
 //Bucle
