@@ -62,7 +62,7 @@ function loop() {
       })
     }
     
-    // Colisiones
+    //Colisiones
     if(personaje.x + pajaro.width >= tuberias[i].x && 
        tuberias[i].x <= tuberias[i].x + tuberiaarriba.width && 
        (personaje.y <= tuberias[i].y +  tuberiaarriba.height || 
