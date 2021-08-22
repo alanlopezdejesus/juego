@@ -20,7 +20,7 @@ var personaje = {
 
 var tuberias = new Array ()
 tuberias[0] = {
-  x:contexto.canvas.width,
+  x:contexto.width,
   y:0
 }
 
