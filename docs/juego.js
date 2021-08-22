@@ -59,6 +59,10 @@ function loop() {
     contexto.drawImage(tuberiaabajo,tuberias[i].x,tuberias[i].y + constante)
     tuberias[i].x--
     
+    if(tuberias[i].y + tuberiaarriba.height < 80 ){
+      tuberias[i].y = 0
+    }
+    
     if(tuberias[i].x == 150 ){
       tuberias.push({
         x:contexto.canvas.width,
