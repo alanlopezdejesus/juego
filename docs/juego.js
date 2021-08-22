@@ -64,7 +64,7 @@ function loop() {
     
     //Colisiones
     if(personaje.x + pajaro.width >= tuberias[i].x && 
-       tuberias[i].x <= tuberias[i].x + tuberiaarriba.width && 
+       personaje.x <= tuberias[i].x + tuberiaarriba.width && 
        (personaje.y <= tuberias[i].y +  tuberiaarriba.height || 
        personaje.y + pajaro.height >= tuberias[i].y + constante) || 
        personaje.y + pajaro.height >=  contexto.canvas.height - suelo.height){
