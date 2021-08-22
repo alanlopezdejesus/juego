@@ -52,7 +52,7 @@ function loop() {
   contexto.drawImage(suelo,0,contexto.canvas.height - suelo.height)
   //Personaje
   contexto.drawImage(pajaro,personaje.x,personaje.y)
-  //Tuberias
+  // Tuberias
   for(i = 0; i < tuberias.length; i++){
     var constante = tuberiaarriba.height + 80
     contexto.drawImage(tuberiaarriba,tuberias[i].x,tuberias[i].y)
