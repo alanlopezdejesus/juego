@@ -83,7 +83,7 @@ function loop() {
     
     if(tuberias[i].x == 150 ){
       tuberias.push({
-        x:contexto.canvas.width,
+        x:contexto.width,
         y: Math.floor(Math.random()*tuberiaarriba.height) - tuberiaarriba.height
       })
     }
@@ -93,7 +93,7 @@ function loop() {
             personaje.x <= tuberias[i].x + tuberiaarriba.width &&
             (personaje.y <= tuberias[i].y + tuberiaarriba.height || 
                 personaje.y + pajaro.height >= tuberias[i].y + constante)
-                || personaje.y + pajaro.height >= contexto.canvas.height - suelo.height){
+                || personaje.y + pajaro.height >= contexto.height - suelo.height){
             location.reload()
         }
     if (tuberias[i].x == personaje.x){
@@ -105,7 +105,7 @@ function loop() {
   personaje.y += gravedad
   ctx.fillStyle = "rgba(0,0,0,1)"
   ctx.font = "25px Arial"
-  ctx.fillText("Score: "+score,10,contexto.canvas.height-40)
+  ctx.fillText("Score: "+score,10,contexto.height-40)
 }
 
 
