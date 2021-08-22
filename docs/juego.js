@@ -13,7 +13,7 @@ var personaje = {
   h:50
 }
 
-var tuberias =  Array ()
+var tuberias = new Array ()
 tuberias[0] = {
   x:contexto.canvas.width,
   y:0
