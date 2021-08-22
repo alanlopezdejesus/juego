@@ -57,9 +57,10 @@ function resize(){
   contexto.height = HEIGHT;
   
   contexto.style.height = ""+CANVAS_WIDTH+"px";
+  
 }
 
-//Bucle
+// Bucle
 setInterval(loop,1000/FPS)
 
 function loop() {
