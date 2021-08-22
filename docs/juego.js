@@ -37,7 +37,7 @@ setInterval(loop,1000/FPS)
 
 function loop() {
   contexto.clearRect(0,0,300,530)
-  //Fonfo
+  //Fondo
   contexto.drawImage(fondo,0,0)
   contexto.drawImage(suelo,0,contexto.canvas.height - suelo.height)
   //Personaje
@@ -49,4 +49,4 @@ function loop() {
 
 
 //Evento
-window.addEventListener("Keydown",presionar)
+window.addEventListener("keydown",presionar)
