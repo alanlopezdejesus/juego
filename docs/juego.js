@@ -13,14 +13,14 @@ var personaje = {
   h:50
 }
 
-var tuberias = new Array ()
+var tuberias =  Array ()
 tuberias[0] = {
   x:contexto.canvas.width,
   y:0
 }
 
 //Variables audios
-var punto = Audio()
+var punto = new Audio()
 punyo.src= "audios/punto.mp3"
 
 //Variables imagenes
