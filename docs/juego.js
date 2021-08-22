@@ -64,17 +64,17 @@ function resize(){
 setInterval(loop,1000/FPS)
 
 function loop() {
-  contexto.clearRect(0,0,300,530)
+  ctx.clearRect(0,0,300,530)
   //Fondo
-  contexto.drawImage(fondo,0,0)
-  contexto.drawImage(suelo,0,contexto.canvas.height - suelo.height)
+  ctx.drawImage(fondo,0,0)
+  ctx.drawImage(suelo,0,contexto.canvas.height - suelo.height)
   //Personaje
-  contexto.drawImage(pajaro,personaje.x,personaje.y)
+  ctx.drawImage(pajaro,personaje.x,personaje.y)
   // Tuberias
   for(i = 0; i < tuberias.length; i++){
     var constante = tuberiaarriba.height + 80
-    contexto.drawImage(tuberiaarriba,tuberias[i].x,tuberias[i].y)
-    contexto.drawImage(tuberiaabajo,tuberias[i].x,tuberias[i].y + constante)
+    ctx.drawImage(tuberiaarriba,tuberias[i].x,tuberias[i].y)
+    ctx.drawImage(tuberiaabajo,tuberias[i].x,tuberias[i].y + constante)
     tuberias[i].x--
     
     if(tuberias[i].y + tuberiaarriba.height < 80 ){
@@ -103,9 +103,9 @@ function loop() {
   }
   // Condiciones
   personaje.y += gravedad
-  contexto.fillStyle = "rgba(0,0,0,1)"
-  contexto.font = "25px Arial"
-  contexto.fillText("Score: "+score,10,contexto.canvas.height-40)
+  ctx.fillStyle = "rgba(0,0,0,1)"
+  ctx.font = "25px Arial"
+  ctx.fillText("Score: "+score,10,contexto.canvas.height-40)
 }
 
 
