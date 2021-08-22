@@ -19,6 +19,10 @@ tuberias[0] = {
   y:0
 }
 
+//Variables audios
+var punto = Audio()
+punyo.src= "audios/punto.mp3"
+
 //Variables imagenes
 var pajaro = new Image()
 pajaro.src="imagenes/bird.png"
@@ -63,8 +67,15 @@ function loop() {
     }
     
     // Colisiones
-    if(personaje.x + pajaro.width >= tuberias[i].x && personaje.x <= tuberias[i].x + tuberiaarriba.width && (personaje.y <= tuberias[i].y + tuberiaarriba.height || personaje.y + pajaro.height >= tuberias[i].y + constante) || personaje.y + pajaro.height >=  contexto.canvas.height - suelo.height){
+    if(personaje.x + pajaro.width >= tuberias[i].x && 
+       personaje.x <= tuberias[i].x + tuberiaarriba.width && 
+       (personaje.y <= tuberias[i].y + tuberiaarriba.height || 
+        personaje.y + pajaro.height >= tuberias[i].y + constante) 
+       || personaje.y + pajaro.height >=  contexto.canvas.height - suelo.height){
       location.reload()
+    }
+    if (tuberias[i].x == personaje.x){
+      score++
     }
   }
   //Condiciones
