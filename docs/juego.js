@@ -76,7 +76,7 @@ function loop() {
     }
     if (tuberias[i].x == personaje.x){
       score++
-      punto.play
+      punto.play()
     }
   }
   //Condiciones
