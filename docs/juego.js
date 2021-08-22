@@ -2,7 +2,7 @@ var contexto = document.getElementById("LienzoJuego").getContext("2d")
 contexto.canvas.width = 300
 contexto.canvas.height = 530
 
-// Variables generales
+//Variables generales
 var score = 0
 var FPS = 60
 var gravedad = 1.5
