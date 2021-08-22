@@ -13,8 +13,8 @@ var personaje = {
 }
 
 //Control
-function keyDown(){
-  personaje.y -=25
+function presionar(){
+  personaje.y -=35
 }
 
 setInterval(loop,1000/FPS)
@@ -26,3 +26,7 @@ function loop() {
   
   personaje.y += gravedad
 }
+
+
+//Evento
+window.addEventListener("Keydown",presionar)
