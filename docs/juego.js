@@ -79,7 +79,7 @@ function loop() {
       punto.play()
     }
   }
-  //Condiciones
+  // Condiciones
   personaje.y += gravedad
   contexto.fillStyle = "rgba(0,0,0,1)"
   contexto.font = "25px Arial"
