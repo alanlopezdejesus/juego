@@ -1,5 +1,5 @@
 var contexto = document.getElementById("LienzoJuego")
-var ctx =contexto.getContext("2d")
+var ctx = contexto.getContext("2d")
 var WIDTH = 300;
 var HEIGHT = 530;
 var CANVAS_WIDTH = 300;
