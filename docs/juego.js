@@ -67,7 +67,7 @@ function loop() {
   ctx.clearRect(0,0,300,530)
   //Fondo
   ctx.drawImage(fondo,0,0)
-  ctx.drawImage(suelo,0,contexto.canvas.height - suelo.height)
+  ctx.drawImage(suelo,0,contexto.height - suelo.height)
   //Personaje
   ctx.drawImage(pajaro,personaje.x,personaje.y)
   // Tuberias
