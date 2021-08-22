@@ -7,7 +7,7 @@ var CANVAS_HEIGHT = 530;
 contexto.width = WIDTH;
 contexto.height = HEIGHT;
 
-//Variables
+// Variable
 var score = 0
 var FPS = 60
 var gravedad = 1.5
