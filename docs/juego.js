@@ -27,7 +27,6 @@ tuberiaabajo.src="imagenes/tuberiaSur.png"
 
 var suelo = new Image()
 suelo.src="imagenes/suelo.png"
-
 //Control
 function presionar(){
   personaje.y -=35
