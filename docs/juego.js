@@ -1,6 +1,6 @@
 var contexto = document.getElementById("LienzoJuego").getContext("2d")
-contexto.canva.width = 300
-contexto.canva.height = 700
+contexto.canvas.width = 300
+contexto.canvas.height = 700
 
 var FPS = 60
 
