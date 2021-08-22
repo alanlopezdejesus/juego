@@ -3,6 +3,7 @@ contexto.canvas.width = 300
 contexto.canvas.height = 530
 
 //Variables generales
+var score = 0
 var FPS = 60
 var gravedad = 1.5
 var personaje = {
@@ -60,9 +61,18 @@ function loop() {
         y: Math.floor(Math.random()*tuberiaarriba.height) - tuberiaarriba.height
       })
     }
+    
+    //Colisiones
+    if(personaje.x + pajaro.width >= tuberias[i].x && tuberias[i].x <= tuberias[i].x + tuberiaarriba.width && (personaje.y <= tuberias[i].y +  tuberiaarriba.width || personaje.y + pajaro.height >= tuberias[i].y + constante) ||
+      personaje.y + pajaro.height >=  contexto.canvas.height - suelo.height){
+      location.reload()
+    }
   }
   //Condiciones
   personaje.y += gravedad
+  contexto.fillStyle = "rgba(0,0,0,1)"
+  contexto.font = "25px Arial"
+  contexto.fillText("Score: "+score,10,contexto.canvas.height-40)
 }
 
 
