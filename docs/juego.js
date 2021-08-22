@@ -87,5 +87,5 @@ function loop() {
 }
 
 
-//Evento
+// Evento
 window.addEventListener("keydown",presionar)
